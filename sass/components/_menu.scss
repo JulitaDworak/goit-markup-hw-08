@@ -1,0 +1,46 @@
+.menu{
+    position: fixed;
+  display: none;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  padding: 2rem;
+  background-color: violet;
+  transform: translateX(100%);
+
+    &__toggle{
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: violet;
+        :hover {
+          color: $active;
+        }
+    }
+
+    &__container{
+        position: fixed;
+        display: none;
+        opacity: 0;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        padding: 2rem;
+        background-color: violet;
+    }
+
+    &__mobile{
+        position: fixed;
+        display: none;
+        opacity: 0;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        padding: 2rem;
+        background-color: violet;
+    }
+}

@@ -48,6 +48,28 @@
 
         </div>
         </div>
+       
+       <!-- button mobile-menu -->
+        <button
+          class="menu__toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+
     </header>
     <main>
         <!-- HERO -->           
@@ -379,6 +401,32 @@
 
     </main>
     
+    <div class="menu__container js-menu-container" id="mobile-menu">
+        <button class="menu__toggle js-close-menu">
+          <svg
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+  
+        <ul class="mobile-menu menu__mobile">
+          <li><a href="" class="link">About</a></li>
+          <li><a href="" class="link">Products</a></li>
+          <li><a href="" class="link">Contacts</a></li>
+          <li><a href="" class="link">Career</a></li>
+        </ul>
+      </div>
+
+
    
     <footer class="footer">
         <div class="container footer-container "> 
@@ -508,7 +556,7 @@
 
 
 
- <label for="button_send"> 
+ <label for="accept"> 
        <div class="chbx-form"> 
         <div class="chbx-form__priv-accept">
         <input class="chbx-form__priv-accept-click" type="checkbox" id="accept"/> 
@@ -535,73 +583,13 @@ Oświadczam iż akceptuję  <span class="modal-span"> Regulamin </span> i <span 
 </div>
 </div>
 <script src="./modal.js"></script>
-
-<!-- <div class="overlay is-hidden" data-modal>       
-    <div class="modal" >  
-        <form class="form-modal">
-<h3 class="form-modal__name"> Zostaw swoje dane w formularzu poniżej</h3>
-
-<label for="customer_name"> Imie </label>
-<div class="form-modal__label">
-    <input class="form-modal__form-inputs" type="name"  name="name" id="customer_name" />
-    <svg class="form-modal__form-icon" width="16" height="16"> 
-        <use  href="./images/icons.svg#icon-person-black-18dp-1"> </use>
-    </svg>
-</div>
-
-
-<label for="customer_tel">
-    Telefon 
-    <div class="form-modal__label" >
-    <input class="form-modal__form-inputs" type="telephone"  name="phone" id="customer_tel" />
-    <svg class="form-modal__form-icon" width="17" height="17"> 
-        <use href="./images/icons.svg#icon-phone-black-18dp-1"> </use>
-    </svg>
-</div>
-</label>
-<label for="customer_mail">
-    Email 
-    <div class="form-modal__label">
-    <input class="form-modal__form-inputs" type="mail"  name="mail" id="customer_mail" />
-    <svg class="form-modal__form-icon" width="20" height="16"> 
-        <use href="./images/icons.svg#icon-email-black-18dp-1"> </use>
-    </svg>
-</div>
-</label>
-
-<label for="customer_comment">
-    Komentarz 
-    <div class="form-modal__label">
-    <input class="form-modal__form-inputs-comments" type="text"  name="comment" placeholder="Wprowadź tekst" id="customer_comment" />
-</div>
-</label>
-
-<!-- <div class="chbx-text">  -->
-<!-- <div class="chbx-form">
-<div class="chbx-form__priv-accept">
- <label class="chbx-form__checkbox" > 
-        <input type="checkbox" id="accept"></input> 
-
-Oświadczam iż akceptuję  <span class="modal-span"> Regulamin </span> i <span class="modal-span"> Politykę prywatności</span>
-<svg class="chbx-form__checkbox-checked" width="16" height="15">   
-     <use href="./images/icons.svg#icon-icon-check"></use>
- </svg></label>
-</div>
-</div>
-
-<button class="submit-btn" type="submit" class="submit-btn">Wyślij</button>
-        </form>
-        <button  data-modal-close class="close-btn" type="button" >
-            <svg class="close-icon" width="15" height="15">
-                <use href="./images/icons.svg#icon-x">
-
-                </use>
-            </svg>
-            <span class="close-x">X</span>
-            </button>
-    </div>
-</div>
-</div> -->
+<script
+defer
+src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+crossorigin="anonymous"
+></script>
+<script defer src="js/mobile-menu.js"></script>
 
 </body>
 

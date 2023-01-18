@@ -1,11 +1,12 @@
+
 .description-container{
-    display:flex;
+    display:block;
     box-sizing: border-box;
     letter-spacing: 0.03em;
     font-size: 14px;
     line-height: 1.71;
     width: auto;
-    vertical-align: top;
+    // vertical-align: top;
     margin: 0;
     padding: 0;
     column-gap: 30px;
@@ -27,3 +28,34 @@
   }
 
 }
+
+
+// .description-container{
+//     display:flex;
+//     box-sizing: border-box;
+//     letter-spacing: 0.03em;
+//     font-size: 14px;
+//     line-height: 1.71;
+//     width: auto;
+//     vertical-align: top;
+//     margin: 0;
+//     padding: 0;
+//     column-gap: 30px;
+//     margin-left: 15px;
+//     margin-right: 15px;
+//     margin-bottom:94px ;
+   
+// &__icons{
+//     background-color: #F5F4FA;
+//     margin-bottom: 30px;
+//     }
+// &__about, &__name{
+//     margin-top: 0;
+//     margin-bottom: 0;
+// }
+// &__svg{
+//     align-items: center;
+//     margin: 25px 102.34px
+//   }
+
+// }

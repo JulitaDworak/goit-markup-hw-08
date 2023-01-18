@@ -14,6 +14,7 @@
   --order-container-bcg-color: #2f303a;
   --order-decription-font-weight: 900;
   --order-decription-font-size: 44px;
+  --order-decription-font-size-mobile: 44px;
   --order-decription-line-height: 1.36;
   --order-decription-color: #ffffff;
   --order-btn-font-weight: 700;
@@ -43,6 +44,7 @@
   --footer-email-tel-color: rgba(255, 255, 255, 0.6);
   --btn-cursor: pointer;
 }
+
 
 .footer__logo-span, .footer__logo, .nav-main__logo--blue, .nav-main__logo {
   font-family: var(--second-font-style);
@@ -77,6 +79,46 @@
   color: #2196f3;
   outline: none;
 }
+
+
+/* header-mobile*/
+.header-border {
+  vertical-align: bottom;
+  border-bottom: 1px solid rgb(236, 236, 236);
+  margin-top: 0;
+}
+.nav-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.nav-main__logo {
+  outline: none;
+  color: rgb(0, 0, 0);
+}
+.nav-main__logo--blue {
+  color: rgb(33, 150, 243);
+  margin-left: 30px;
+}
+.nav-main__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 46px;
+  padding: 0;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 93px;
+  margin-right: 345px;
+}
+
+
 
 .header-border {
   vertical-align: bottom;
