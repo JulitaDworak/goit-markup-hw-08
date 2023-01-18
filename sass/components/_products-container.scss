@@ -1,0 +1,94 @@
+.products-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 0;
+    cursor: pointer;
+    margin-bottom: 94px;
+   
+&__product{
+  position:relative;
+  display: grid;
+  grid-template-columns: repeat(3, 370px);
+  grid-template-rows: repeat(3, 404px);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  justify-content: space-around;}
+
+    &__product-content{
+        margin: 0;
+        padding: 0;
+        &:hover{
+        box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16); 
+        }
+    }
+    &__product-presentation{
+        margin: 0;
+        padding: 0;
+        &:hover{
+        box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16); 
+        }
+    }
+
+    &__product-slide{
+        position:relative;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+      margin-right: auto;
+
+      &:hover > .products-container__product-slide-effect {
+        transform: translateY(-100%);
+        box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+      }
+    }
+
+    &__product-presentation-img{
+        vertical-align: bottom;
+    }
+    &__product-slide-effect{
+        position:absolute;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        height: 110%;
+        padding: 49px 45px 49px 24px;
+        background-color: 
+        rgba(33, 150, 243, 0.9);
+        color:#ffffff;
+        transform: translateY(+100%);
+        transition:transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        font-size: 18px;
+        line-height: 1.55;
+        letter-spacing: 3%;
+        text-align: left;  
+    }
+
+    &__product-description{
+        display: block;
+        top:300px;
+        width: 100%;
+        justify-content: start;
+        line-height: 2;
+        margin-bottom: 4px;
+        justify-content: start;
+        border-top: none;
+        padding-left: 24px ;
+        padding-top: 20px;
+        margin-bottom: 0;
+        border: 1px solid rgba(238, 238, 238, 1);
+    }
+    &__product-description-span{
+        display: block;
+        padding-bottom: 20px;
+        justify-content: start;
+        color: var(--span-img-description-color);
+        padding-top: 4px;
+        line-height: 2;
+    }
+
+}

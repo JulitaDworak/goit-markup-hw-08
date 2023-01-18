@@ -1,0 +1,46 @@
+
+
+@use "./utils/variables.scss";
+@import "./components/header";
+@import "./components/order-container";
+@import "./components/description-container";
+@import "./components/what-we-do";
+@import "./components/team-container";
+@import "./components/client-section";
+@import "./components/filter-btn";
+@import "./components/products-container";
+@import "./components/modal";
+// @import "./components/footer";
+@import "./components/footer-items";
+
+  body {
+  font-family:var(--main-font-style);
+    color: var(--main-font-color);
+    box-sizing:border-box;
+}
+  a{
+    position:relative;
+  }
+  body a {
+    text-decoration: none;
+  }
+  body ul {
+    list-style-type: none;
+  }
+
+  .container {
+    width: 1200px;
+    margin: 0px auto;
+    
+    &--header{
+      display: flex;
+      align-items: center;
+      margin-top: 24px;
+      margin-bottom: 25px;
+  }
+  
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}

@@ -1,0 +1,66 @@
+<div class="overlay is-hidden" data-modal>       
+    <div class="modal" >  
+        <form class="form-modal">
+<h3 class="form-modal__name"> Zostaw swoje dane w formularzu poniżej</h3>
+
+<label for="customer_name"> Imie 
+<div class="form-modal__label">
+    <input class="form-modal__form-inputs" type="name"  name="name" id="customer_name" />
+    <svg class="form-modal__form-icon" width="16" height="16"> 
+        <use  href="./images/icons.svg#icon-person-black-18dp-1"> </use>
+    </svg>
+</div>
+</label>
+
+<label for="customer_tel">
+    Telefon 
+    <div class="form-modal__label" >
+    <input class="form-modal__form-inputs" type="telephone"  name="phone" id="customer_tel" />
+    <svg class="form-modal__form-icon" width="17" height="17"> 
+        <use href="./images/icons.svg#icon-phone-black-18dp-1"> </use>
+    </svg>
+</div>
+</label>
+<label for="customer_mail">
+    Email 
+    <div class="form-modal__label">
+    <input class="form-modal__form-inputs" type="mail"  name="mail" id="customer_mail" />
+    <svg class="form-modal__form-icon" width="20" height="16"> 
+        <use href="./images/icons.svg#icon-email-black-18dp-1"> </use>
+    </svg>
+</div>
+</label>
+
+<label for="customer_comment">
+    Komentarz 
+    <div class="form-modal__label">
+    <input class="form-modal__form-inputs-comments" type="text"  name="comment" placeholder="Wprowadź tekst" id="customer_comment" />
+</div>
+</label>
+
+<!-- <div class="chbx-text">  -->
+<div class="chbx-form">
+<div class="chbx-form__priv-accept">
+ <label class="chbx-form__checkbox" > 
+        <input type="checkbox" id="accept"></input> 
+
+Oświadczam iż akceptuję  <span class="modal-span"> Regulamin </span> i <span class="modal-span"> Politykę prywatności</span>
+<svg class="chbx-form__checkbox-checked" width="16" height="15">   
+     <use href="./images/icons.svg#icon-icon-check"></use>
+ </svg></label>
+</div>
+</div>
+
+<button class="submit-btn" type="submit" class="submit-btn">Wyślij</button>
+        </form>
+        <button  data-modal-close class="close-btn" type="button" >
+            <svg class="close-icon" width="15" height="15">
+                <use href="./images/icons.svg#icon-x">
+
+                </use>
+            </svg>
+            <span class="close-x">X</span>
+            </button>
+    </div>
+</div>
+<!-- </div> -->

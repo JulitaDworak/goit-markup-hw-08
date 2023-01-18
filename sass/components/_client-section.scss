@@ -1,0 +1,85 @@
+.client{
+&__description{
+    font-weight: var(--h2-font-weight);
+    font-size: var(--h2-font-size);
+    line-height: var(--h2-line-height);
+    line-height: 42px;
+    line-height: 100%;
+    text-align: center;
+    vertical-align: top;
+    letter-spacing: 3%;
+    margin-top: 94px;
+}
+
+&__container{
+    display: flex;
+    margin-top:50px;
+    margin-bottom: 94px;
+    gap: 30px;
+    align-items: center;
+    padding-left: 0;
+    justify-content: space-between;
+}
+
+&__icons-container{
+display: flex;
+border: 1px solid rgba(175, 177, 184, 1);
+border-radius: 4px;
+transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+outline: none;
+
+//     &:hover{
+//         fill:#2196F3;
+//         border: 1px solid #2196F3;
+//         border-radius: 4px;
+
+// }
+}
+
+
+&__icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+    fill:#AFB1B8;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border: none;
+    padding: 14.25px 32px;
+    outline: none;
+}
+}
+
+
+
+.client{
+.client__icons-container{
+            &:hover{
+            fill:#2196F3;
+            border-radius: 4px;
+            border: 1px solid #2196F3;
+a{
+    &:hover{
+        fill:#2196F3;
+        border: none;
+        border-radius: 4px;
+        .client__icons{
+            fill:#2196F3;
+            border: none; 
+        }}}}}
+        .client__icons-container{
+            :focus{
+            fill:#2196F3;
+            border-radius: 4px;
+            // border: 1px solid #2196F3;       
+a{
+    &:focus{
+        fill:#2196F3;
+        border-radius: 4px;
+        .client__icons{
+            // border: 1px solid #2196F3;
+            fill:#2196F3;}
+
+        }}}}}
+
+
