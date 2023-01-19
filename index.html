@@ -22,6 +22,30 @@
             <div class="container container--header ">
             <nav class="nav-main">
     <a class="nav-main__logo"   href="index.html"><span class="nav-main__logo nav-main__logo--blue">Web</span>Studio</a>
+    
+      
+           <!-- button mobile-menu -->
+           <button
+           class="menu-toggle js-open-menu"
+           aria-expanded="false"
+           aria-controls="mobile-menu"
+         >
+           <svg class="menu-toggle__icon"
+             width="24"
+             height="24"
+             fill="currentColor"
+             viewBox="0 0 20 20"
+             xmlns="http://www.w3.org/2000/svg"
+           >
+             <path
+               fill-rule="evenodd"
+               d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+               clip-rule="evenodd"
+             ></path>
+           </svg>
+         </button>
+
+
     <ul class="nav-main__links">
         <li><a class="nav-main__links-item nav-main__links-item--underline" href="#">Agencja</a></li>
         <li><a class="nav-main__links-item " href="portfolio.html">Portfolio</a></li>
@@ -31,45 +55,23 @@
             </nav>
             <div class="contacts-links" >
     <ul class="contacts-links__container">
-<li class="contacts-links__list" >                
+<li class="contacts-links__list contacts-links__list--firs" >                
     <a class="contacts-links__item" href="mailto:info@webstudio.com">
     <svg  class="contacts-links__icon" width="24" height="18" >
     <use  href="./images/icons.svg#icon-envelope"></use>
 </svg>info@webstudio.com</a>
 </li>
 
-<li>                
+<li class="contacts-links__list">                
     <a class="contacts-links__item" href="tel:+48111111111">
     <svg class="contacts-links__icon" width="16" height="23" >
     <use href="./images/icons.svg#icon-smartphone"></use>
     </svg>+48 111 111 111</a>
     </ul>
 </li>
-
         </div>
         </div>
-       
-       <!-- button mobile-menu -->
-        <button
-          class="menu__toggle js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-          <svg
-            width="24"
-            height="24"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"
-            ></path>
-          </svg>
-        </button>
-
+     
     </header>
     <main>
         <!-- HERO -->           
@@ -400,10 +402,10 @@
     </div>
 
     </main>
-    
-    <div class="menu__container js-menu-container" id="mobile-menu">
-        <button class="menu__toggle js-close-menu">
-          <svg
+    <!-- mobile-menu -->
+    <div class="menu-container js-menu-container is-open" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+          <svg class="menu-toggle__icon"
             fill="currentColor"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
@@ -418,15 +420,57 @@
           </svg>
         </button>
   
-        <ul class="mobile-menu menu__mobile">
-          <li><a href="" class="link">About</a></li>
-          <li><a href="" class="link">Products</a></li>
-          <li><a href="" class="link">Contacts</a></li>
-          <li><a href="" class="link">Career</a></li>
+        <ul class="mobile-menu ">
+            <li><a class="mobile-menu__links-item mobile-menu__links-item--first" href="#">Agencja</a></li>
+            <li><a class="mobile-menu__links-item " href="portfolio.html">Portfolio</a></li>
+            <li><a class="mobile-menu__links-item mobile-menu__links-item--third " href="kontakt.html">Kontakt</a>
+            </li>
         </ul>
+
+
+    <ul class="mobile-contacts-links__container">
+        <li class="mobile-contacts-links__list">                
+            <a class="mobile-contacts-links__item mobile-contacts-links__item--big-tel" href="tel:+48111111111">
+            <!-- <svg class="mobile-contacts-links__icon" width="16" height="23" >
+            <use href="./images/icons.svg#icon-smartphone"></use>
+            </svg> -->
+            +48 111 111 111</a>
+        </li>
+        <li class="mobile-contacts-links__list" >                
+            <a class="mobile-contacts-links__item mobile-contacts-links__item--big-mail" href="mailto:info@webstudio.com">
+            <!-- <svg  class="mobile-contacts-links__icon" width="24" height="18" >
+            <use  href="./images/icons.svg#icon-envelope"></use>
+        </svg> -->
+        info@webstudio.com</a>
+        </li>
+        
+
+    </ul>
+<div>
+    <div class="mobile-team-container__social-media">
+        <li class="mobile-team-container__social-media-block">
+           <a  href="https://www.instagram.com/">Instagram
+           </a>
+         </li>
+         <li class="mobile-team-container__social-media-block">
+         <a   href="https://twitter.com/?lang=pl">Twitter
+         </a>
+     </li>
+     <li class="mobile-team-container__social-media-block" >
+             <a  href="https://www.facebook.com/">Facebook</a>
+             </a>
+     </li>
+     <li class="mobile-team-container__social-media-block" >
+             <a  href="https://www.linkedin.com/">LinkedIn
+         </a>
+     </li>
+     </div>
+
+</div>
+
       </div>
 
-
+<!-- footer -->
    
     <footer class="footer">
         <div class="container footer-container "> 
@@ -583,13 +627,13 @@ Oświadczam iż akceptuję  <span class="modal-span"> Regulamin </span> i <span 
 </div>
 </div>
 <script src="./modal.js"></script>
+<script defer src="./mobile-menu.js"></script>
 <script
 defer
 src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
 integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
 crossorigin="anonymous"
 ></script>
-<script defer src="js/mobile-menu.js"></script>
 
 </body>
 

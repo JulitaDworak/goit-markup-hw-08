@@ -36,7 +36,7 @@
   }
   
   %btn{
-    font-weight: var(--order-btn-color);
+    font-weight: var(--order-btn-font-weight);
     // line-height: var(--order-btn-line-height);
     background: var(--order-btn-bcg-color);
     font-size: var(--order-btn-font-size);
@@ -49,6 +49,25 @@
   }
 
 
+
+  @media screen and (min-width: 768px){
+  .order-container{
+    letter-spacing: 0.2em;
+    // padding: 118px 40px;
+    
+    &__description{
+      margin-bottom: 30px;
+      margin-top: 0;
+      padding: 118px 180px 0px 180px;
+      }
+    
+      &__btn{  
+      margin: 0px 284px 118px 284px;
+    
+      }
+    }
+  }
+  
 
 // .order-container{
 // width:100%;

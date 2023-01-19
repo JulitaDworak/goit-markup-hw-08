@@ -1,46 +1,231 @@
-.menu{
-    position: fixed;
-  display: none;
+.menu-container{
+position: fixed;
   opacity: 0;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100vw;
-  padding: 2rem;
-  background-color: violet;
+  background-color: #fff;
   transform: translateX(100%);
-
-    &__toggle{
-        background: none;
-        border: none;
-        cursor: pointer;
-        color: violet;
-        :hover {
-       color:blue;
-        }
-    }
-
-    &__container{
-        position: fixed;
-        display: none;
-        opacity: 0;
-        top: 0;
-        left: 0;
-        height: 100vh;
-        width: 100vw;
-        padding: 2rem;
-        background-color: violet;
-    }
-
-    &__mobile{
-        position: fixed;
-        display: none;
-        opacity: 0;
-        top: 0;
-        left: 0;
-        height: 100vh;
-        width: 100vw;
-        padding: 2rem;
-        background-color: violet;
-    }
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  visibility: hidden;
+  inset: 0;
+  padding: 48px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
+
+
+.menu-toggle {
+  cursor: var(--btn-cursor);
+  border: none;
+  background-color: #fff;
+  width: auto;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+
+  &:hover,
+  &:focus {
+    fill:#2196F3;
+  }
+
+  &__icon{
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.is-open {
+  transform: translateX(0);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 1;
+  visibility: hidden;
+ }
+
+
+.mobile-menu{
+    display: block;
+    align-items: left;
+    justify-content: left;
+    padding: 0;
+    margin: 0;
+  
+  
+  &__links-item{
+    position: relative;
+    display: flex;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    &:hover{
+      @extend %hover;
+    }
+  
+    &:focus{
+      @extend %focus;
+    }
+  
+    &--first{
+        margin-bottom: 32px;
+    }
+
+    &--third{
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+
+}}
+
+
+  .mobile-contacts-links{
+    display:block;
+    padding:0;
+    margin: 0;
+    
+      &__container{
+    display: block;
+      padding:0;
+      margin: 0;
+      }
+    
+     &__list{
+      display: flex;
+      align-items: left;
+      justify-content: left;
+      padding: 0;
+margin: 32px 0px 0px 0px;
+      @extend %nav-contact-tel-mail-prop;
+     } 
+    
+    &__item{
+      display: flex;
+      align-items: left;
+      justify-content: left;
+      color: (var(--nav-color-email-tel));
+
+      
+
+      &:hover{
+        @extend %hover;
+      }
+    
+      &:focus{
+        @extend %focus;
+      }
+    
+      &--big-tel{
+        font-size:34px;
+        color: #2196F3;
+        &:hover{
+            @extend %hover;
+          }
+        
+          &:focus{
+            @extend %focus;
+          }
+        }
+
+        &--big-mail{
+            font-size:24px;
+            &:hover{
+                @extend %hover;
+              }
+            
+              &:focus{
+                @extend %focus;
+              }
+            }
+
+    }
+
+    
+    .contacts-links__item{
+      &:hover{
+        .contacts-links__icon{
+          fill: #2196F3;
+        }
+      }
+      &:focus{
+        .contacts-links__icon{
+          fill: #2196F3;
+        }
+      }
+    }}
+
+
+    .mobile-team-container{
+        text-decoration: none;
+    &__social-media{
+        display: flex;
+        gap:10px;    
+        margin-top:16px;
+        
+        color: #2196F3;
+        font-size: 18px;
+    }
+    
+    &__social-media-block{
+    display: flex;
+    //   margin-right: 32px;
+    margin-top: 16px;
+    padding: 0;
+    padding-right: 10px;
+    outline: none;
+    color: #2196F3;
+    outline: none;
+    text-decoration: none;
+    border-right: 1px solid #757575;
+    }
+
+}
+    
+    .team-container{
+        .team-container__social-media-block{
+        :hover{
+            fill: #ffffff;
+            background-color:#2196F3;
+            outline: none;
+        svg{
+            &:hover{
+                fill: #ffffff;
+                background-color:#2196F3;
+                outline: none;
+            
+        .team-container__social-media-icons{
+            &:hover{
+                fill: #ffffff;
+                background-color:#2196F3;
+                outline: none;
+            }}}}}}
+         :focus{
+                fill: #ffffff;
+                background-color:#2196F3;
+                outline: none;
+            svg{
+                &:focus{
+                    fill: #ffffff;
+                    background-color:#2196F3;
+                    outline: none;
+                
+        .team-container__social-media-icons{
+                &:focus{
+                    fill: #ffffff;
+                    background-color:#2196F3;
+                    outline: none;
+                }}}}
+        }
+    
+           }
+    
+           @media screen and (min-width: 768px){
+              .menu-toggle {
+                display: none;
+          
+                &:hover,
+                &:focus {
+                  fill:#2196F3;
+                }
+              
+                &__icon{
+                  margin: 0;
+                  padding: 0;
+                }
+              }}
+

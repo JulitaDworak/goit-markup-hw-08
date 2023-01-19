@@ -28,6 +28,7 @@
   body ul {
     list-style-type: none;
   }
+
   .container {
     max-width: 480px;
     margin: 0px auto;
@@ -35,11 +36,12 @@
     &--header{
       display: flex;
       align-items: center;
-      margin-top: 24px;
-      margin-bottom: 25px;
+      // margin-top: 16px;
+      // margin-bottom: 16px;
+      // position: absolute;
   }
   // .container {
-  //   width: 1200px;
+  //   max-width: 480px;
   //   margin: 0px auto;
     
   //   &--header{
@@ -48,9 +50,37 @@
   //     margin-top: 24px;
   //     margin-bottom: 25px;
   // }
-  
+
   .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
+  }
+
+
+  @media screen and (min-width: 768px){
+  .container {
+    max-width: 768px;
+    margin: 0px auto;
+
+    &--header{
+      display: flex;
+      align-items: center;
+
+  }}
+
 }
+
+@media screen and (min-width: 1200px){
+  .container {
+    max-width: 1200px;
+    margin: 0px auto;
+    
+    &--header{
+      display: flex;
+      align-items: center;
+      margin-top: 24px;
+      margin-bottom: 25px;
+  }
+  
+ }}
