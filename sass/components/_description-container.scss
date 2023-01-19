@@ -1,30 +1,37 @@
 
 .description-container{
     display:block;
+    flex-wrap: wrap ;
     box-sizing: border-box;
     letter-spacing: 0.03em;
     font-size: 14px;
     line-height: 1.71;
-    width: auto;
+    width: 100%;
+    margin-top: 0;
+    padding-left: 0;
     // vertical-align: top;
-    margin: 0;
-    padding: 0;
     column-gap: 30px;
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-bottom:94px ;
+    // margin-bottom:94px ;
    
 &__icons{
+    display: block;
     background-color: #F5F4FA;
     margin-bottom: 30px;
+    margin-right: 15px;
+    margin-left: 15px;
+    padding: 25px 192px;
     }
 &__about, &__name{
-    margin-top: 0;
-    margin-bottom: 0;
+    word-wrap: break-word;
+    display: block;
+    margin-bottom: 30px;
+    margin-right: 15px;
+    margin-left: 15px;
 }
 &__svg{
+
     align-items: center;
-    margin: 25px 102.34px
+    // margin: 25px 102.34px
   }
 
 }

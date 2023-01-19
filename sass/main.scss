@@ -28,9 +28,8 @@
   body ul {
     list-style-type: none;
   }
-
   .container {
-    width: 1200px;
+    max-width: 480px;
     margin: 0px auto;
     
     &--header{
@@ -39,6 +38,16 @@
       margin-top: 24px;
       margin-bottom: 25px;
   }
+  // .container {
+  //   width: 1200px;
+  //   margin: 0px auto;
+    
+  //   &--header{
+  //     display: flex;
+  //     align-items: center;
+  //     margin-top: 24px;
+  //     margin-bottom: 25px;
+  // }
   
   .section {
     padding-top: 94px;
