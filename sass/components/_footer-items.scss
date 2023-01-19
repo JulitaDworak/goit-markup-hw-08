@@ -190,15 +190,13 @@ flex-wrap: wrap;
 align-items: center;
 justify-content: center;
     position:relative;
-    left:0px;
     top:0px;
     box-sizing: border-box;
     vertical-align: Top;
     letter-spacing: 3%;
     color: #FFFFFF;
     background-color: #2F303A;
-    display: flex;
-    margin: 20px 15px 0px 15px;
+
     // width: 570px;
     // height: 86px;
 
@@ -238,6 +236,7 @@ justify-content: center;
     width: 200px;
     height: 50px;
     margin-top: 37px;
+    margin-left: 0;
     font-family: 'Roboto', sans-serif;;
     font-style: bold;
     font-weight: 700;
@@ -258,7 +257,7 @@ justify-content: center;
     }
 
 
-    @media screen and (min-width: 768px){
+ @media screen and (min-width: 768px){
         .footer-container{
             display: flex;
             flex-wrap: wrap;
@@ -288,13 +287,12 @@ justify-content: center;
         .footer-join-us{
             display: block;
             margin-left: 0px;
-            }}
+            }
         
         
         .footer-form{
         display: flex;
         flex-wrap: wrap;
-   
         align-items: center;
         justify-content: center;
             position:relative;
@@ -343,7 +341,6 @@ justify-content: center;
         &__form-input-send-btn{
             display: flex;
             flex-wrap: wrap;
-            margin:20px 291px 60px 291px;
             background-color:
             rgba(33, 150, 243, 1);
             border-radius: 4px;
@@ -367,7 +364,7 @@ justify-content: center;
             fill:#FFFFFF;
             margin-left: 24px;
         }
-            }
+            }}
     
 
 

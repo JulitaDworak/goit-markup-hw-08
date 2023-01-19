@@ -10,7 +10,6 @@
 @import "./components/filter-btn";
 @import "./components/products-container";
 @import "./components/modal";
-// @import "./components/footer";
 @import "./components/footer-items";
 @import "./components/menu";
 
@@ -39,7 +38,7 @@
       // margin-top: 16px;
       // margin-bottom: 16px;
       // position: absolute;
-  }
+  }}
   // .container {
   //   max-width: 480px;
   //   margin: 0px auto;
@@ -55,7 +54,7 @@
     padding-top: 60px;
     padding-bottom: 60px;
   }
-  }
+  
 
 
   @media screen and (min-width: 768px){
