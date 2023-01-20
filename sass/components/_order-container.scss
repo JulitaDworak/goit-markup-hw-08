@@ -68,7 +68,7 @@
     }
   }
   
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 1200px){
 .order-container{
 letter-spacing: 0.6em;
 margin-bottom: 94px;
@@ -81,3 +81,10 @@ margin-bottom: 94px;
   }
 }
 }
+
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .order-container {
+    background-image: linear-gradient($background-dark-transparent, $background-dark-transparent),
+      url(/goit-markup-hw-08/images/bcg@2x.jpg);
+  }}
