@@ -1,5 +1,19 @@
 .what-we-do{
+  &__container{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px){
+  &__container{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px){
+.what-we-do{
     &__container{
+      display: block;
     justify-content: space-between;
 
   }
@@ -46,4 +60,4 @@
       letter-spacing: 3%;
     }
 
-}
+}}
