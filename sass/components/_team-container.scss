@@ -40,6 +40,11 @@ margin-right: 0;
     padding-bottom: 24px;
 
 }
+
+&__pictures{
+    width: 100%;
+}
+
 &__figcaption {
     font-weight: var(--figcaption-font-weight);
     line-height: var(--figcaption-line-height);

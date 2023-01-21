@@ -17,7 +17,6 @@
   font-family:var(--main-font-style);
     color: var(--main-font-color);
     box-sizing:border-box;
-    // overflow: hidden;
 }
   a{
     position:relative;
@@ -31,6 +30,7 @@
 
   .container {
     max-width: 480px;
+    width: 100%;
     margin: 0px auto;
     
     &--header{

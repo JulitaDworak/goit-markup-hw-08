@@ -16,10 +16,11 @@
     flex-wrap: wrap;
     margin-top:50px;
     margin-bottom: 60px;
-    gap: 30px;
+    column-gap: 30px;
+    row-gap: 30px;
     align-items: center;
-    padding-left: 15px;
-    // justify-content: space-between;
+    padding: 0px;
+    justify-content: space-around;
 }
 
 &__icons-container{

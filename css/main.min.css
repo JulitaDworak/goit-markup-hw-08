@@ -281,7 +281,7 @@
     width: 53px;
     height: 4px;
     border-radius: 2px;
-    top: 55px;
+    top: 50px;
     left: 2px;
   }
   .contacts-links {
@@ -515,16 +515,21 @@
 }
 @media screen and (min-width: 1200px) {
   .order-container {
+    width: 100%;
+    max-width: 1600px;
     letter-spacing: 0.6em;
     margin-bottom: 94px;
   }
   .order-container__description {
     font-size: var(--order-decription-font-size);
-    padding: 0px 200px 30px 200px;
+    padding: 104px 300px 0px 300px;
     letter-spacing: 3%;
   }
+  .order-container__btn {
+    margin: 0px 284px 160px 284px;
+  }
 }
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .order-container {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/goit-markup-hw-08/images/bcg@2x.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/goit-markup-hw-08/images/bcg@2x.jpg);
@@ -753,6 +758,9 @@
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   border-radius: 3px;
   padding-bottom: 24px;
+}
+.team-container__pictures {
+  width: 100%;
 }
 .team-container__figcaption {
   font-weight: var(--figcaption-font-weight);
@@ -998,11 +1006,16 @@
       flex-wrap: wrap;
   margin-top: 50px;
   margin-bottom: 60px;
-  gap: 30px;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+  row-gap: 30px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 15px;
+  padding: 0px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 .client__icons-container {
   display: -webkit-box;
@@ -1640,6 +1653,7 @@
 }
 
 .footer {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1664,7 +1678,7 @@
 }
 
 .footer-data {
-  padding: 0 114px 60px 115px;
+  padding: 0 90px 60px 90px;
   margin-top: 20px;
 }
 .footer-data__info-items {
@@ -2618,6 +2632,7 @@ body ul {
 
 .container {
   max-width: 480px;
+  width: 100%;
   margin: 0px auto;
 }
 .container--header {
