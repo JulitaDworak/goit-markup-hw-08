@@ -520,7 +520,14 @@
   }
   .order-container__description {
     font-size: var(--order-decription-font-size);
-    padding: 0px 300px 30px 300px;
+    padding: 0px 200px 30px 200px;
+    letter-spacing: 3%;
+  }
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .order-container {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/goit-markup-hw-08/images/bcg@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/goit-markup-hw-08/images/bcg@2x.jpg);
   }
 }
 .description-container {
