@@ -1,6 +1,6 @@
 
 .description-container{
-    display:block;
+    display:flex;
     flex-wrap: wrap ;
     box-sizing: border-box;
     letter-spacing: 0.03em;
@@ -10,21 +10,26 @@
     margin-top: 0;
     padding-left: 0;
     // vertical-align: top;
-    column-gap: 30px;
-    // margin-bottom:94px ;
+    // column-gap: 30px;
+    margin-bottom:0px ;
+    align-items: center;
+    justify-content: center;
    
 &__icons{
-    display: block;
+    display: flex;
     background-color: #F5F4FA;
     margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     margin-right: 15px;
     margin-left: 15px;
-    padding: 25px 192px;
+    // padding: 25px 192px;
     }
 &__about, &__name{
     word-wrap: break-word;
     display: block;
-    margin-bottom: 30px;
+    // margin-bottom: 30px;
     margin-right: 15px;
     margin-left: 15px;
 }

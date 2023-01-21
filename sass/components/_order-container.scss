@@ -1,4 +1,6 @@
 .order-container{
+  display: flex;
+  flex-wrap: wrap;
   width:100%;
   box-sizing: border-box;
   margin: auto;
@@ -8,27 +10,33 @@
   background-position: center;
   letter-spacing: 0.1em;
   margin-bottom: 94px;
-  // padding: 118px 40px;
+  padding: 118px 40px;
   align-items: center;
   text-align: center;
   
   &__description{
+    display: flex;
     font-weight: var(--order-decription-font-weight);
     font-size: var(--order-decription-font-size-mobile);
     line-height: var(--order-decription-line-height-mobile);
     color: var(--order-decription-color);
     text-transform: uppercase;
-    align-items: center;
+    // align-items: center;
     padding-top: 118px;
     margin-bottom: 30px;
     margin-top: 0;
+    align-items: center;
+    justify-content: center;
     padding: 118px 57px 0px 57px;
     }
   
     &__btn{  
+      display: flex;
+      align-items: center;
+      justify-content: center;
     @extend %btn; 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    padding: 10px ;
+    margin-bottom: 118px;
     margin: 0px 140px 118px 140px;
     padding: 10px 42px;
   
@@ -83,7 +91,7 @@ margin-bottom: 94px;
   }
 
 &__btn{  
-  margin: 0px 284px 160px 284px;
+  margin: 0px 650px 160px 650px;
 
   }
 }
