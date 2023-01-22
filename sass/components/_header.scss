@@ -60,6 +60,7 @@ margin-top: 0px;
   outline: none;
   color: rgb(0, 0, 0);
   margin-left: 16px;
+  
 
  &:hover{
   outline: none;  
@@ -74,6 +75,7 @@ margin-top: 0px;
   &--blue{
     color: rgba(33, 150, 243, 1);
     @extend %header-logo-theme;
+    margin: 0;
   }
 }
 
@@ -409,20 +411,13 @@ display: flex;
 
 &__icon{
   display: flex;
-  align-items: center;
-  justify-content: center;
-  fill: (var(--nav-color-email-tel));
-  margin-right: 10px;
-  &:hover{
-    outline: none;  
-    color: #2196f3;
-  }
-
-  &:focus{
-    outline: none;  
-    color: #2196f3;
-  }
+width: 15px;height: 18px;
 }
+
+&__item{
+  font-size: 14px;
+}
+
 }
 
 
@@ -437,4 +432,20 @@ display: flex;
       fill: #2196F3;
     }
   }
+  &__icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: (var(--nav-color-email-tel));
+  margin-right: 10px;
+  &:hover{
+    outline: none;  
+    color: #2196f3;
+  }
+
+  &:focus{
+    outline: none;  
+    color: #2196f3;
+  }
+}
 }}

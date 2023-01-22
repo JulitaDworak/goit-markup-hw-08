@@ -1,16 +1,18 @@
 .order-container{
   display: flex;
-  flex-wrap: wrap;
-  width:100%;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 25em;
   box-sizing: border-box;
   margin: auto;
-  background-image: linear-gradient( rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),url("../images/bcg.jpg");
+  background-image: linear-gradient( rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),url("../images/bcg_mob@2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   letter-spacing: 0.1em;
-  margin-bottom: 94px;
-  padding: 118px 40px;
+  // margin-bottom: 94px;
+  // padding: 118px 40px;
   align-items: center;
   text-align: center;
   
@@ -22,12 +24,11 @@
     color: var(--order-decription-color);
     text-transform: uppercase;
     // align-items: center;
-    padding-top: 118px;
     margin-bottom: 30px;
     margin-top: 0;
     align-items: center;
     justify-content: center;
-    padding: 118px 57px 0px 57px;
+    // padding: 24px 57px 0px 57px;
     }
   
     &__btn{  
@@ -36,11 +37,26 @@
       justify-content: center;
     @extend %btn; 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    margin-bottom: 118px;
-    margin: 0px 140px 118px 140px;
+    // margin: 0px 140px 118px 140px;
     padding: 10px 42px;
   
     }
+    &__btn-container{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      // padding: 0 100px 118px 100px;
+    }
+&__header-1{
+  width:calc(100% - 115px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 58px;
+  
+}
+
   }
   
   %btn{
@@ -60,39 +76,63 @@
 
   @media screen and (min-width: 768px){
   .order-container{
-
+    background-image: linear-gradient( rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),url("../images/bcg_tab@2.jpg");
     letter-spacing: 0.2em;
     // padding: 118px 40px;
     
     &__description{
       margin-bottom: 30px;
       margin-top: 0;
-      padding: 118px 180px 0px 180px;
+      // padding: 118px 180px 0px 180px;
       }
     
-      &__btn{  
-      margin: 0px 284px 118px 284px;
+      &__btn-container{  
+      margin-top:0px; 
     
+      }
+
+      &__header-1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width:calc(100% - 200px);
       }
     }
   }
   
   @media screen and (min-width: 1200px){
 .order-container{
+  background-image: linear-gradient( rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),url("../images/bcg@2.jpg");
   width: 100%;
   max-width: 1600px;
 letter-spacing: 0.6em;
 margin-bottom: 94px;
+height: 30.5em;
+
 
 &__description{
   font-size: var(--order-decription-font-size);
-  padding: 104px 300px 0px 300px;
-  letter-spacing: 3%;
+  // padding: 104px 300px 0px 300px;
+  letter-spacing: 0%;
+  font-size: 44px;
+  line-height: 1.36;
+  max-width: 800px;
+  align-items: center;
+  justify-content: center;
   }
 
-&__btn{  
-  margin: 0px 650px 160px 650px;
+// &__btn{  
+//   margin: 0px 650px 160px 650px;
 
+//   }
+
+  &__header-1{
+    width:calc(100% - 600px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 110px;
   }
 }
 
@@ -100,5 +140,5 @@ margin-bottom: 94px;
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .order-container {
     background-image: linear-gradient( rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
-      url(/goit-markup-hw-08/images/bcg@2x.jpg);
+      url(/goit-markup-hw-08/images/bcg@2.jpg);
   }}}
