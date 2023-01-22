@@ -23,6 +23,7 @@
 display: flex;
 align-items: center;
 justify-content: center;
+
 &:hover{
     outline: none;  
     color: #2196f3;
@@ -40,16 +41,22 @@ justify-content: center;
 }
 
 .footer-data{
-    padding: 0 90px 60px 90px;
-    margin-top: 20px;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 0px 60px 0px;
+    margin: 20px 0px 0px 0px;
 
 
     &__info-items{
+    display: flex;
+    flex-direction: column;
     font-style: normal;
     font-size: var(--footer-font-size);
     line-height: 1.71;
     margin-bottom: 0px;
-    padding-left: 0;
+    // padding-left: 0;
     align-items: center;
     justify-content: center;
 }
