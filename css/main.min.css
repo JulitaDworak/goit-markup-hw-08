@@ -1475,13 +1475,19 @@
 }
 
 .form-modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: calc(100% - 80px);
   color: #757575;
   margin: 0;
   position: absolute;
   top: 40px;
   bottom: 40px;
-  width: 100%;
-  padding: 0px 40px 0px 40px;
 }
 .form-modal__label {
   display: block;
@@ -1506,7 +1512,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 12px;
+  margin-bottom: 2px;
   margin-top: 0px;
   letter-spacing: 3%;
 }
@@ -1518,6 +1524,7 @@
   font-size: 12px;
   line-height: 1.16;
   position: relative;
+  height: 120px;
 }
 .form-modal__form-inputs {
   position: relative;
@@ -1552,6 +1559,7 @@
 .form-modal__form-inputs-data {
   border: none;
   outline: none;
+  width: 100%;
 }
 .form-modal__form-icon {
   position: absolute;
@@ -1594,7 +1602,7 @@
 .modal {
   position: relative;
   width: 450px;
-  height: 581px;
+  height: 609px;
   border-radius: 4px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.2);
           box-shadow: rgba(0, 0, 0, 0.2);
@@ -1679,8 +1687,6 @@
   height: 50px;
   padding: 10px 76px;
   margin-top: 30px;
-  margin-bottom: 20px;
-  margin-left: 124px;
   font-family: "Roboto", sans-serif;
   font-style: bold;
   font-weight: 700;
@@ -1706,6 +1712,19 @@
       align-content: center;
   cursor: pointer;
 }
+.submit-btn__send {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 
 .modal-span {
   color: #2196F3;
@@ -1718,6 +1737,15 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1917,6 +1945,7 @@
   font-size: var(--footer-font-size);
   line-height: 1.71;
   margin-bottom: 0px;
+  padding-left: 0px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2703,7 +2732,7 @@
 }
 .mobile-menu__links-item--third {
   margin-top: 32px;
-  margin-bottom: 32px;
+  margin-bottom: 182px;
 }
 
 .mobile-contacts-links {
@@ -2791,10 +2820,18 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 10px;
   margin-top: 16px;
   color: #2196F3;
   font-size: 18px;
+  font-weight: 500;
+  font-style: var(--main-font-style);
   outline: none;
   color: #2196F3;
   list-style: none;
@@ -2806,13 +2843,22 @@
       -ms-flex-pack: center;
           justify-content: center;
   border-right: 1px solid #757575;
+  width: 100%;
 }
-.mobile-team-container__social-media__social-media-block {
-  width: calc(100% - 80px);
+.mobile-team-container__social-media-block {
+  width: calc(100% - 40px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   font-size: 18px;
+  font-weight: 500;
+  font-style: var(--main-font-style);
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2825,6 +2871,8 @@
   color: #2196F3;
   text-decoration: none;
   list-style: none;
+  border-right: 1px solid #757575;
+  max-width: 85px;
 }
 
 .team-container .team-container__social-media-block :hover {
