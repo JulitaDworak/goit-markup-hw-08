@@ -19,7 +19,10 @@
 &__logo{
     @extend %header-logo-theme;
     color: rgba(255, 255, 255, 1);
-padding: 0 163px 20px 163px;
+// padding: 0 163px 20px 163px;
+display: flex;
+align-items: center;
+justify-content: center;
 &:hover{
     outline: none;  
     color: #2196f3;
