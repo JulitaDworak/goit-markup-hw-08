@@ -11,6 +11,7 @@
   animation: scale;
   transition-property:visibility, opacity, transform, background-color;
   transition-duration: 1500ms;
+  padding: 10px;
 }
 
 
@@ -202,7 +203,7 @@ transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
       width: 200px;
       height: 50px;
       padding: 10px 76px;
-     margin-top: 30px;
+    //  margin-top: 30px;
     //  margin-bottom: 20px;
     //  margin-left: 124px;
      font-family: 'Roboto', sans-serif;;
@@ -229,6 +230,7 @@ display: flex;
 align-items: center;
 align-content: center;
 justify-content: center;
+padding-top: 10px;
       }
     
     }
@@ -331,7 +333,14 @@ justify-content: center;
 
       font-size: 14px;
 
-}}
+}
+.submit-btn{
+
+  &__send{
+padding-top: 30px;
+  }
+}
+}
 
 @media screen and (min-width: 1200px){
   .modal{

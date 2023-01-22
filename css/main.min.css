@@ -1466,6 +1466,7 @@
   transition-property: visibility, opacity, transform, background-color, -webkit-transform;
   -webkit-transition-duration: 1500ms;
           transition-duration: 1500ms;
+  padding: 10px;
 }
 
 .is-hidden {
@@ -1686,7 +1687,6 @@
   width: 200px;
   height: 50px;
   padding: 10px 76px;
-  margin-top: 30px;
   font-family: "Roboto", sans-serif;
   font-style: bold;
   font-weight: 700;
@@ -1724,6 +1724,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-top: 10px;
 }
 
 .modal-span {
@@ -1835,6 +1836,9 @@
   .chbx-form {
     font-size: 14px;
   }
+  .submit-btn__send {
+    padding-top: 30px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {
@@ -1870,6 +1874,10 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   letter-spacing: 0.03em;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -2170,7 +2178,7 @@
 }
 .footer-form__form-input {
   margin-top: 20px;
-  width: 100%;
+  width: calc(100% - 20px);
   padding: 15px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: #2F303A;
@@ -2215,6 +2223,10 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     letter-spacing: 0.03em;
